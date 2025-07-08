@@ -5,7 +5,7 @@ import type { CreateStackRequest, Stack, StackStore, UpdateStackRequest } from '
 
 export const useStackStore = create<StackStore>()(
   devtools(
-    (set, get) => ({
+    (set) => ({
       // State
       stacks: [],
       loading: false,
